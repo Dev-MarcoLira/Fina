@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Fina.Core.Enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -13,8 +14,9 @@ namespace Fina.Core.Requests.Categories
         [ MaxLength(80, ErrorMessage = "The title must contain up to 80 characters") ]
         public String Title { get; set; } = string.Empty;
 
-        [ Required(ErrorMessage = "Invalid Description") ]
+        [Required(ErrorMessage = "Invalid Description")]
         public String Description { get; set; } = string.Empty;
+
 
     }
 }
