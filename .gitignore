@@ -1,0 +1,14 @@
+# Ignore build outputs
+bin/
+obj/
+
+# Ignore VS config files
+.vs/
+.vscode/
+.idea/
+
+# Ignore user-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
