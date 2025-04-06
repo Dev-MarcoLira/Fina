@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Fina.Core.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +18,7 @@ namespace Fina.Core.Models
         public DateTime? PaidOrReceivedAt { get; set; }
 
         // Input or Output
-        public bool Type { get; set; }
+        public ETransationType Type { get; set; } = ETransationType.Withdraw;
 
         public long CategoryId { get; set; }
         public Category Category { get; set; } = null!;
